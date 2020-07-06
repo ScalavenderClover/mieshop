@@ -6,11 +6,11 @@
     <title>Document</title>
     <style>
     input.error {
-      border-bottom: 1px solid red;
+      border-bottom: 1px solid #ff6700;
     }
 
     label.error {
-      color: red;
+      color: #ff6700;
       display: block;
       font-size: 14px;
     }
@@ -28,38 +28,42 @@
     <script src="../lib/jquery-cookie/jquery.cookie.js"></script>
     <script src="../js/login.js"></script>
     <div class="header">
-        <div class="container">
-            <a href="./index.html"><img src="../images/login/logo.png" alt="logo.png"></a>
+        <div class="container3">
+            <div class="header-logo">
+                <a href="./index.html"></a>
+             </div>
         </div>
     </div>
 
     <div class="login">
         <form id="login-f" action="../server/login.php" method="POST">
-            <div class="login-container">
-                <div class="login-container-titile">TP-LINK会员登录</div>
-                <!-- <p class="login-container-info">账号或密码错误</p> -->
-                <div class="account">
-                    <input type="text" class="account-input" name="username" maxlength="50" placeholder="邮箱/手机号">
-                </div>
-                <!-- <p class="account-info">请输入邮箱或手机号</p> -->
+            <div class="container3">
+                <div class="login-container">
+                    <div class="login-container-titile">小米登录</div>
+                    <!-- <p class="login-container-info">账号或密码错误</p> -->
+                    <div class="account">
+                        <input type="text" class="account-input" name="username" maxlength="50" placeholder="邮箱/手机号">
+                    </div>
+                    <!-- <p class="account-info">请输入邮箱或手机号</p> -->
 
-                <div class="account-password">
-                    <input type="password" class="account-password-input" name="password" maxlength="50" placeholder="密码">
-                </div>
-                <!-- <p class="account-password-info">请输id入密码</p> -->
+                    <div class="account-password">
+                        <input type="password" class="account-password-input" name="password" maxlength="50" placeholder="密码">
+                    </div>
+                    <!-- <p class="account-password-info">请输id入密码</p> -->
 
-                <div class="account-code">
-                    <input type="text" class="account-code-input" name="codeI" id="codeI" maxlength="50" placeholder="验证码">
-                    <input type="button" class="account-code-img" name="code" id="code" onclick="createCode()">
-                </div>
+                    <div class="account-code">
+                        <input type="text" class="account-code-input" name="codeI" id="codeI" maxlength="50" placeholder="验证码">
+                        <input type="button" class="account-code-img" name="code" id="code" onclick="createCode()">
+                    </div>
 
-                <div class="account-login-submit">
-                    <button class="btn btn-primary btn-lg" style="width: 400px;background-color: #0096FF;border:none;text-align: center;" onclick="validate()">立即登录</button>
-                </div>
-                <div class="account-bottom clean" style="width: 400px;margin: 0 auto 80px;">
-                    <a class="account-bottom-register" href="./register.html" style="text-decoration: none;float: right;">免费注册</a>
-                </div>
+                    <div class="account-login-submit">
+                        <button class="btn btn-primary btn-lg" style="width: 400px;background-color: #ff6700;border:none;text-align: center;" onclick="validate()">登录</button>
+                    </div>
+                    <div class="account-bottom clean" style="width: 400px;margin: 0 auto 80px;">
+                        <a class="account-bottom-register" href="./register.html" style="text-decoration: none;float: right;">免费注册</a>
+                    </div>
             </div>
+        </div>
         </form>
     </div>
     <script>

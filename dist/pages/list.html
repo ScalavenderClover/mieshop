@@ -13,7 +13,7 @@
             dataType: 'json',
             success: function (res) {
              
-    
+              console.log(res)
               //渲染分页器
               $('.pagi').pagination({
                 pageCount: Math.ceil(res.length / 12), // 总页数
@@ -81,9 +81,9 @@
           // 不管是什么都要把数组重组
           list2.sort(function (a, b) {
             if (flag === true) {
-              return a.list_id - b.list_id
+              return a.list_price - b.list_price
             } else {
-              return b.list_id - a.list_id
+              return b.list_price - a.list_price
             }
           })
 
